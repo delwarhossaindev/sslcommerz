@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\SslCommerzPaymentController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------

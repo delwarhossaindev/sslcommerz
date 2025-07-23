@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use DB;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Library\SslCommerz\SslCommerzNotification;
 
 class SslCommerzPaymentController extends Controller
@@ -162,6 +163,8 @@ class SslCommerzPaymentController extends Controller
     public function success(Request $request)
     {
         echo "Transaction is Successful";
+
+        dd($request->all());
 
         $tran_id = $request->input('tran_id');
         $amount = $request->input('amount');
